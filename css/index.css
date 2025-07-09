@@ -1,15 +1,33 @@
+/*Header*/
+#margin-msg {
+    margin-top: 350px;
+}
+
+.btn-header{
+    background-color: transparent;
+    color: var(--white);
+    border: 5px solid var(--white);
+    border-radius: 2px;
+    width: 330PX;
+}
+
+.btn-header:hover{
+    color: var(--orange);
+    border: 5px solid var(--orange);
+}
+
 /*Sessão Info*/
 .info{
     width: 100%;
     height: auto;
 }
-.msg-info{
+.conteudo-doacao, .conteudo-coleta{
     width: 650px;
     height: auto;
     border-radius: 10px;
 }
 
-.foto-info{
+.foto-doacao, .foto-coleta{
     display: flex;
     width: 350px;
     height: 350px;
@@ -21,26 +39,6 @@
     height: 350px;
     object-fit: cover;
     border-radius: 10px;
-}
-
-.btn-info{
-    width: 300px;
-    height: 45px;
-    border-radius: 50px;
-    background-color: var(--green);
-    border: none;
-    font-weight: bold;
-    transition: ease-in-out .3s;
-}
-
-.btn-info:hover{
-    width: 300px;
-    height: 45px;
-    border-radius: 50px;
-    background-color: #25c52a;
-    border: none;
-    font-weight: bold;
-    transition: ease-in-out .3s;
 }
 
 /*Sessão Sugestões*/
@@ -58,37 +56,20 @@
     width: 100%;
     height: 220px;
 }
-
-.card-p{
-    color: var(--black);
-    font-size: 16px;
-    font-weight: 400;
-}
-
 .card-foto img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.btn-card{
-    width: 250px;
-    height: 45px;
-    border-radius: 50px;
-    background-color: var(--orange);
-    border: none;
-    font-weight: bold;
-    transition: ease-in-out .3s;
+.texto-card{
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 400;
 }
 
-.btn-card:hover{
-    width: 250px;
-    height: 45px;
-    border-radius: 50px;
-    background-color: #ffaa00;
-    border: none;
-    font-weight: bold;
-    transition: ease-in-out .3s;
+.btn-card{
+    background-color: var(--orange);
 }
 
 /*Tablet*/
@@ -97,13 +78,16 @@
     .info{
         height: auto;
     }
-    .div-info{
+
+    .bloco-doacao, .bloco-coleta{
         width: 90%;
     }
-    .msg-info{
+
+    .conteudo-doacao, .conteudo-coleta{
         width: 100%;
     }
-    .foto-info{
+
+    .foto-doacao, .foto-coleta{
         display: none;
     }
 }
@@ -111,17 +95,20 @@
 /*Mobile*/
 @media (max-width: 500px) {
     /*Sessão Info*/
-    .btn-info{
-        width: 80%;
-    }
-    .foto-info{
+    .foto-doacao, .foto-coleta{
         width: 100%;
-        height: 250px;
+        height: 350px;
         display: flex;
     }
+
     .info img{
         text-align: center;
-        width: 250px;
-        height: 250px;
+        width: 330px;
+        height: 330px;
     }
+    
+    /*Sessão sugestão*/
+    .card-sugestao{
+    width: 330px;
+}
 }
