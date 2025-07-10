@@ -72,6 +72,37 @@
     background-color: var(--orange);
 }
 
+/*Modais*/
+.overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.bg-modal{
+    width: 60%;
+    background-color: var(--white);
+    border-radius: 5px;
+}
+
+#modalCadastro, #modalCausa {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10000;
+  background-color: rgba(0, 0, 0, 0.7); /* fundo escuro translúcido */
+}
+
+.texto-modal{
+    width: 35%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
 /*Tablet*/
 @media (max-width: 992px) {
     /*Sessão Info*/
@@ -88,12 +119,29 @@
     }
 
     .foto-doacao, .foto-coleta{
-        display: none;
+        width: 100%;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    /*Modais*/
+    .texto-modal{
+        display: none !important;
+    }
+
+    .bg-modal{
+    width: 80%;
     }
 }
 
 /*Mobile*/
 @media (max-width: 500px) {
+    /*Header*/
+    .btn-header{
+        width: 230px;
+    }
+
     /*Sessão Info*/
     .foto-doacao, .foto-coleta{
         width: 100%;
@@ -110,5 +158,5 @@
     /*Sessão sugestão*/
     .card-sugestao{
     width: 330px;
-}
+    }
 }
