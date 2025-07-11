@@ -15,7 +15,7 @@ contentCausa.addEventListener("submit", function (e) {
   }
 
   // Monta a URL com os parâmetros codificados para redirecionar para a página de pontos disponíveis
-  const url = `/pontos-disponiveis.html?cidade=${encodeURIComponent(cidade)}&causa=${encodeURIComponent(causaSelecionada)}`;
+  const url = `./pontos-disponiveis.html?cidade=${encodeURIComponent(cidade)}&causa=${encodeURIComponent(causaSelecionada)}`;
 
   // Redireciona o usuário para a URL montada
   window.location.href = url;
