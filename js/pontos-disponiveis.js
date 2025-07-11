@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
 
         <div class="mt-auto d-flex justify-content-center">
-          <a href="ponto-coleta.html?id=${ponto.id}" class="d-flex align-items-center justify-content-center btn-main btn-card text-dark fw-bold" style="width: 70%; text-decoration: none;">CONHECER</a>
+          <a href="./ponto-coleta.html?id=${ponto.id}" class="d-flex align-items-center justify-content-center btn-main btn-card text-dark fw-bold" style="width: 70%; text-decoration: none;">CONHECER</a>
         </div>
 
       </div>
