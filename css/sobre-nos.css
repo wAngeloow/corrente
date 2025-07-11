@@ -1,4 +1,4 @@
-html {
+body  {
     overflow-x: hidden;
 }
 
@@ -33,7 +33,6 @@ html {
 
 /*Mobile*/
 @media (max-width: 576px) {
-
     /*Header*/
     .sobre-nos {
         font-size: 55px;
