@@ -1,5 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
-    //Entrar em Contato
+    // Elementos do menu hamburger
+    const slide = document.querySelector('.slide');
+    const hamburger = document.getElementById('hamburger');
+
+    // Entrar em Contato
     const openBtn = document.getElementById('open-menu');
     const closeBtn = document.getElementById('close-menu');
     const contatoBtn = document.getElementById("btn-contato");
@@ -14,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
         hamburger.style.display = 'block';
     });
 
-    contatoBtn?.addEventListener("click", function () {
+    contatoBtn?.addEventListener("click", () => {
         window.open("https://chat.whatsapp.com/H8fN9K9LEsvJwBuARSVAWc?mode=r_c", "_blank");
     });
 
@@ -27,21 +31,21 @@ document.addEventListener("DOMContentLoaded", function () {
     const contentCausa = document.getElementById("contentCausa");
 
     // Abrir modal de doação com botão principal
-    botaoCausa?.addEventListener("click", function () {
+    botaoCausa?.addEventListener("click", () => {
         modalCausa.classList.remove("d-none");
         document.body.classList.add("no-scroll");
     });
 
     // Abrir modal de doação com qualquer botão "DOAR"
     botoesDoar.forEach((botao) => {
-        botao.addEventListener("click", function () {
+        botao.addEventListener("click", () => {
             modalCausa.classList.remove("d-none");
             document.body.classList.add("no-scroll");
         });
     });
 
-    // Fechar modal de causa ao clicar fora
-    modalCausa.addEventListener("click", function (event) {
+    // Fechar modal de causa ao clicar fora do conteúdo
+    modalCausa.addEventListener("click", (event) => {
         if (!contentCausa.contains(event.target)) {
             modalCausa.classList.add("d-none");
             document.body.classList.remove("no-scroll");

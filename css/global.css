@@ -24,15 +24,32 @@ html {
 }
 
 /*Tipografia*/
-h1, h2, h3, h4, h5, h6, button {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
     font-family: "Josefin Sans", sans-serif;
     font-weight: bold;
 }
 
-h1 { font-size: 30px; }
-h2 { font-size: 27px; }
-h3 { font-size: 25px; }
-p  { font-size: 23px; }
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 27px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+p {
+    font-size: 23px;
+}
 
 /*Botões*/
 .btn-main {
@@ -50,7 +67,7 @@ p  { font-size: 23px; }
 
 /*Nav*/
 .slide {
-    width: 300px;
+    width: 350px;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.9);
     position: fixed;
@@ -107,7 +124,8 @@ p  { font-size: 23px; }
 
 .foto-footer {
     width: 150px;
-    height: 150px; /* corrigido: estava sem px */
+    height: 150px;
+    /* corrigido: estava sem px */
 }
 
 .linha-div {
@@ -116,7 +134,7 @@ p  { font-size: 23px; }
     background-color: var(--black);
 }
 
-.btn-footer{
+.btn-footer {
     background-color: var(--blue);
     color: var(--white) !important;
     border-radius: 5px !important;
@@ -135,11 +153,23 @@ p  { font-size: 23px; }
 
 /*Tablet*/
 @media (max-width: 992px) {
+
     /*Tipografia*/
-    h1 { font-size: 25px; }
-    h2 { font-size: 23px; }
-    h3 { font-size: 20px; }
-    p  { font-size: 18px; }
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 18px;
+    }
 
     /*Botões*/
     .btn-main {
@@ -148,6 +178,10 @@ p  { font-size: 23px; }
     }
 
     /*Nav*/
+    .slide {
+        width: 300px;
+    }
+
     .slide ul {
         font-size: 20px;
     }
@@ -160,12 +194,13 @@ p  { font-size: 23px; }
     }
 
     .linha-div {
-    width: 7px;
+        width: 7px;
     }
 }
 
 /*Mobile*/
 @media (max-width: 576px) {
+
     /*Footer*/
     .linha-div {
         width: 350px;

@@ -36,7 +36,7 @@
     <!--Header-->
     <header class="pt-3 pt-lg-1">
         <!--Título-->
-        <h1 class="pt-4 sobre-nos text-center">
+        <h1 class="pt-4 titulo-header text-center">
             SOBRE NÓS
         </h1>
 
@@ -201,8 +201,6 @@
         <div class="form container d-flex flex-column align-items-center justify-content-center">
 
             <div class="bg-modal p-3">
-                <button id="closeCausa" class="btn-close position-absolute top-0 end-0 m-3"
-                    aria-label="Fechar"></button>
                 <h5 class="text-center mt-3">PARA QUEM DOAR</h5>
 
                 <form id="contentCausa" class="container">
@@ -213,10 +211,9 @@
                             <label for="cidade" class="form-label">Cidade que deseja doar:</label>
                             <select class="form-select" id="cidade" required>
                                 <option value="" disabled selected>Selecione uma cidade</option>
-                                <option value="São Leopoldo">São Leopoldo</option>
-                                <option value="Novo Hamburgo">Novo Hamburgo</option>
+                                <option value="Canoas">Canoas</option>
                                 <option value="Porto Alegre">Porto Alegre</option>
-                                <option value="Caxias">Caxias</option>
+                                <option value="São Leopoldo">São Leopoldo</option>
                             </select>
                         </div>
 
@@ -225,9 +222,15 @@
                             <label class="form-label">Causa que deseja doar:</label>
 
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="causaDoacao" value="Higiene"
-                                    id="higiene">
-                                <label class="form-check-label" for="higiene">Higiene</label>
+                                <input class="form-check-input" type="radio" name="causaDoacao" value="Alimentos"
+                                    id="alimentos">
+                                <label class="form-check-label" for="alimentos">Alimentos</label>
+                            </div>
+
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="causaDoacao" value="Pets" id="pets">
+                                <label class="form-check-label" for="pets">Pets</label>
                             </div>
 
                             <div class="form-check">
@@ -236,17 +239,12 @@
                                 <label class="form-check-label" for="roupas">Roupas</label>
                             </div>
 
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="causaDoacao" value="Alimento"
-                                    id="alimento">
-                                <label class="form-check-label" for="alimento">Alimento</label>
-                            </div>
                         </div>
 
                         <!-- Botão -->
                         <div class="text-center mt-4">
                             <button type="submit" class="btn-main pt-1"
-                                style="background-color: var(--orange);">ENVIAR</button>
+                                style="background-color: var(--orange);">BUSCAR</button>
                         </div>
                     </div>
                 </form>
@@ -262,7 +260,9 @@
         </div>
     </div>
 
-    <script src="/js/sobre-nos.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/modal-doar.js"></script>
+    <script src="/js/footer.js"></script>
 </body>
 
 </html>

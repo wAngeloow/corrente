@@ -56,11 +56,11 @@
                 <i class="fa-solid fa-xmark fs-2 text-white" id="close-menu" style="cursor: pointer;"></i>
             </div>
             <nav class="flex-grow-1 d-flex align-items-center justify-content-center">
-                <ul class="d-flex flex-column gap-3">
+                <ul class="d-flex flex-column align-items-start gap-3">
                     <li><a href="#home">Início</a></li>
                     <li><a href="#doar">Doar</a></li>
                     <li><a href="#ponto-coleta">Ser ponto de coleta</a></li>
-                    <li><a href="/pages/sobre-nos.html">Sobre nós</a></li>
+                    <li><a href="sobre-nos.html">Sobre nós</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
@@ -144,104 +144,6 @@
 
             <div class="d-flex flex-wrap justify-content-center gap-4">
 
-                <!--Card 1-->
-                <article class="card-sugestao d-flex flex-column rounded-2">
-
-                    <!--Foto-->
-                    <div class="card-foto">
-                        <img class="rounded-top-2" src="assets/loading.png" alt="Imagem de um ponto de coleta">
-                    </div>
-
-                    <div class="d-flex flex-column flex-grow-1 gap-3 p-3">
-
-                        <!--Localização-->
-                        <div class="d-flex gap-2 align-items-center">
-                            <i class="fa-solid fa-location-dot fs-5" style="color: #000000;"></i>
-                            <p class="texto-card mb-0">Rio Grande do Sul</p>
-                        </div>
-
-                        <!--Informações-->
-                        <div>
-                            <h5>NOME DA INSTITUIÇÃO</h5>
-                            <p class="texto-card">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident,
-                                illo.
-                                Ipsa adipisci dolorum omnis voluptatum fuga vero id fugit officia nulla voluptate
-                                praesentium illum amet voluptates placeat laboriosam, nihil excepturi.</p>
-                        </div>
-
-                        <!--Botão-->
-                        <div class="mt-auto d-flex justify-content-center">
-                            <button class="btn-main btn-card pt-1" style="width: 70%;">CONHECER</button>
-                        </div>
-
-                    </div>
-                </article>
-
-                <!--Card 2-->
-                <article class="card-sugestao d-flex flex-column rounded-2">
-
-                    <!--Foto-->
-                    <div class="card-foto">
-                        <img class="rounded-top-2" src="assets/loading.png" alt="Imagem de um ponto de coleta">
-                    </div>
-
-                    <div class="d-flex flex-column flex-grow-1 gap-3 p-3">
-
-                        <!--Localização-->
-                        <div class="d-flex gap-2 align-items-center">
-                            <i class="fa-solid fa-location-dot fs-5" style="color: #000000;"></i>
-                            <p class="texto-card mb-0">Rio Grande do Sul</p>
-                        </div>
-
-                        <!--Informações-->
-                        <div>
-                            <h5>NOME DA INSTITUIÇÃO</h5>
-                            <p class="texto-card">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident,
-                                illo.
-                                Ipsa adipisci dolorum omnis voluptatum fuga vero id fugit officia nulla voluptate
-                                praesentium illum amet voluptates placeat laboriosam, nihil excepturi.</p>
-                        </div>
-
-                        <!--Botão-->
-                        <div class="mt-auto d-flex justify-content-center">
-                            <button class="btn-main btn-card pt-1" style="width: 70%;">CONHECER</button>
-                        </div>
-
-                    </div>
-                </article>
-
-                <!--Card 3-->
-                <article class="card-sugestao d-flex flex-column rounded-2">
-
-                    <!--Foto-->
-                    <div class="card-foto">
-                        <img class="rounded-top-2" src="assets/loading.png" alt="Imagem de um ponto de coleta">
-                    </div>
-
-                    <div class="d-flex flex-column flex-grow-1 gap-3 p-3">
-
-                        <!--Localização-->
-                        <div class="d-flex gap-2 align-items-center">
-                            <i class="fa-solid fa-location-dot fs-5" style="color: #000000;"></i>
-                            <p class="texto-card mb-0">Rio Grande do Sul</p>
-                        </div>
-
-                        <!--Informações-->
-                        <div>
-                            <h5>NOME DA INSTITUIÇÃO</h5>
-                            <p class="texto-card">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident,
-                                illo.
-                                Ipsa adipisci dolorum omnis voluptatum fuga vero id fugit officia nulla voluptate
-                                praesentium illum amet voluptates placeat laboriosam, nihil excepturi.</p>
-                        </div>
-
-                        <!--Botão-->
-                        <div class="mt-auto d-flex justify-content-center">
-                            <button class="btn-main btn-card pt-1" style="width: 70%;">CONHECER</button>
-                        </div>
-
-                    </div>
-                </article>
             </div>
 
         </div>
@@ -342,10 +244,9 @@
                             <label for="cidade" class="form-label">Cidade que deseja doar:</label>
                             <select class="form-select" id="cidade" required>
                                 <option value="" disabled selected>Selecione uma cidade</option>
-                                <option value="São Leopoldo">São Leopoldo</option>
-                                <option value="Novo Hamburgo">Novo Hamburgo</option>
+                                <option value="Canoas">Canoas</option>
                                 <option value="Porto Alegre">Porto Alegre</option>
-                                <option value="Caxias">Caxias</option>
+                                <option value="São Leopoldo">São Leopoldo</option>
                             </select>
                         </div>
 
@@ -354,9 +255,15 @@
                             <label class="form-label">Causa que deseja doar:</label>
 
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="causaDoacao" value="Higiene"
-                                    id="higiene">
-                                <label class="form-check-label" for="higiene">Higiene</label>
+                                <input class="form-check-input" type="radio" name="causaDoacao" value="Alimentos"
+                                    id="alimentos">
+                                <label class="form-check-label" for="alimentos">Alimentos</label>
+                            </div>
+
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="causaDoacao" value="Pets" id="pets">
+                                <label class="form-check-label" for="pets">Pets</label>
                             </div>
 
                             <div class="form-check">
@@ -365,17 +272,12 @@
                                 <label class="form-check-label" for="roupas">Roupas</label>
                             </div>
 
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="causaDoacao" value="Alimento"
-                                    id="alimento">
-                                <label class="form-check-label" for="alimento">Alimento</label>
-                            </div>
                         </div>
 
                         <!-- Botão -->
                         <div class="text-center mt-4">
                             <button type="submit" class="btn-main pt-1"
-                                style="background-color: var(--orange);">ENVIAR</button>
+                                style="background-color: var(--orange);">BUSCAR</button>
                         </div>
                     </div>
                 </form>
@@ -475,6 +377,8 @@
         </div>
     </div>
 
+    <script src="js/locais.js"></script>
+    <script src="js/modal-doar.js"></script>
     <script src="js/index.js"></script>
 </body>
 
