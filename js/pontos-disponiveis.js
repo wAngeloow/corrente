@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         <div class="d-flex gap-2 align-items-center">
           <i class="fa-solid fa-location-dot fs-5" style="color: #000000;"></i>
-          <p class="texto-card mb-0">Rio Grande do Sul</p>
+          <p class="texto-card mb-0">${ponto.cidade} - RS</p>
         </div>
 
         <div>

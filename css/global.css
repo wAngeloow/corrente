@@ -21,6 +21,10 @@ html {
     --dark-gray: #667485;
     --gray: #E1E1E1;
     --black: #000000;
+    --btn-modal: #FFC107;
+    --btn-causas: #FE3548;
+    --btn-cards: #01c8ad;
+    --btn-footer: #000000;
 }
 
 /*Tipografia*/
@@ -135,7 +139,7 @@ p {
 }
 
 .btn-footer {
-    background-color: var(--blue);
+    background-color: var(--btn-footer);
     color: var(--white) !important;
     border-radius: 5px !important;
 }
