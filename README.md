@@ -1,6 +1,6 @@
 <div align="center">
   <h1>Corrente do Bem</h1>
-  <p>O **Corrente do Bem** é um site que facilita a conexão entre doadores e pessoas em situação de vulnerabilidade. A plataforma permite encontrar pontos de coleta próximos, visualizar locais confiáveis para doação e até se candidatar como novo ponto de apoio, promovendo uma rede solidária e acessível. Todas as informações, locais, contatos e funcionalidades são reais, baseadas em dados coletados ao longo do desenvolvimento do projeto.</p>
+  <p>O Corrente do Bem é um site que facilita a conexão entre doadores e pessoas em situação de vulnerabilidade. A plataforma permite encontrar pontos de coleta próximos, visualizar locais confiáveis para doação e até se candidatar como novo ponto de apoio, promovendo uma rede solidária e acessível. Todas as informações, locais, contatos e funcionalidades são reais, baseadas em dados coletados ao longo do desenvolvimento do projeto.</p>
 </div>
 
 
