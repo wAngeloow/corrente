@@ -16,6 +16,41 @@
     border: 5px solid var(--orange);
 }
 
+/*Nav*/
+.slide {
+    width: 350px;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.slide.active {
+    transform: translateX(0);
+}
+
+.slide ul {
+    font-size: 25px;
+}
+
+.slide ul li {
+    list-style: none;
+}
+
+.slide ul li a {
+    text-decoration: none;
+    color: var(--white);
+    transition: color 0.5s ease-in-out;
+}
+
+.slide ul li a:hover {
+    color: var(--green);
+}
+
 /*Sessão Info*/
 .info {
     width: 100%;
